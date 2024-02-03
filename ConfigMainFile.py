@@ -64,7 +64,6 @@ class ProcessPdfFiles(ReadFile):
                 #ObjReadFile.RemoveFile()
                 continue
 
-
 #--------------------------------------------
 #   Main Execution Steps
 #--------------------------------------------
@@ -73,5 +72,6 @@ class main(ProcessPdfFiles):
         Srchpattrn = input("What would you like to search now ? ")
         ObjProcessPdfFiles = ProcessPdfFiles(path, path_out,Srchpattrn)
         ObjProcessPdfFiles.processFiles()
+        print('main is called')
 
 
